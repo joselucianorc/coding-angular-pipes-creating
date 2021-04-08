@@ -1,0 +1,12 @@
+<p>Informações do Livro</p>
+
+<p>Editora : {{ livro.titulo | uppercase | lowercase | camelCase}}</p>
+<p>Avaliações dos clientes: {{ livro.rating | number:'1.1-1' }}</p> 
+<p>Número de páginas : {{ livro.paginas | number }}</p>
+<p>Preço : {{ livro.preco | currency:'BRL'}}</p>
+<p>Data do Lançamento : {{ livro.dataLancamento | date:'dd/MMM/yyyy' }}</p>
+<p>URL : {{ livro.url }}</p>
+
+<br>
+
+<p>{{ livro | json }}</p>
